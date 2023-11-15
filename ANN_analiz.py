@@ -10,10 +10,7 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 
 
-data_path = r''  # Kendi verisetinizin dizinini  tırnak işareti içine yazın.
-file_name = 'analiz.xlsx'
-full_path = os.path.join(data_path, file_name)
-df = pd.read_excel(full_path)
+data = pd.read_excel(r'') # Tırnak işareti içine verisetinizi ekleyin.
 
 X = StandardScaler().fit_transform(df.drop('', axis=1)) #tırnak işareti içine kendi veri setinizin çıkış değişkenini ekleyin.
 y = LabelEncoder().fit_transform(df['']) #tırnak işareti içine kendi veri setinizin çıkış değişkenini ekleyin.
