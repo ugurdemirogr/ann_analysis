@@ -4,13 +4,13 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import roc_curve, auc
 import matplotlib.pyplot as plt
 
-data = pd.read_excel(r'C:\Users\ugurd\OneDrive\Masaüstü\analiz.xlsx')
+data = pd.read_excel(r'') # Tırnak işareti içine verisetinizi ekleyin.
 
 X = data.iloc[:, 0:8]  # Giriş değişkenleri
 y = data.iloc[:, 8]     # Hedef değişken
 
 y = y.replace({1: 0, 2: 1})
-X = pd.get_dummies(X, columns=['Cinsiyet_1', 'AnneOgrenim_1', 'BabaOgrenim_1', 'OkumaSiklik_1', 'Internet_1', 'Telefon_1'])
+X = pd.get_dummies(X, columns=['']) # Kategorik değişkenleri belirtin.
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
