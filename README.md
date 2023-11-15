@@ -12,5 +12,5 @@
 <br>
 <br>
 <br>
-<br>  <a href=”ugurdemirogr@gmail.com”> **_Soru ve iletişim için e posta gönderebilirsiniz_**</a>
+<br>  **_Soru ve iletişim için e posta gönderebilirsiniz:_** *ugurdemirogr@gmail.com*
 
