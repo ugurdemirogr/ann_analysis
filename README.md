@@ -12,5 +12,5 @@
 <br>
 <br>
 <br>
-<br>  **_Soru ve iletişim için e posta gönderebilirsiniz:_** *ugurdemirogr@gmail.com*
+<br>  **_Sorularınız ve iletişim için:_** *ugurdemirogr@gmail.com*
 
