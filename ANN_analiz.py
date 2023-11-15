@@ -10,18 +10,18 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 
 
-data_path = r'C:\Users\ugurd\OneDrive\Masaüstü'
+data_path = r''  # Kendi verisetinizin dizinini  tırnak işareti içine yazın.
 file_name = 'analiz.xlsx'
 full_path = os.path.join(data_path, file_name)
 df = pd.read_excel(full_path)
 
-X = StandardScaler().fit_transform(df.drop('OAP_Aralıklı', axis=1))
-y = LabelEncoder().fit_transform(df['OAP_Aralıklı'])
+X = StandardScaler().fit_transform(df.drop('', axis=1)) #tırnak işareti içine kendi veri setinizin çıkış değişkenini ekleyin.
+y = LabelEncoder().fit_transform(df['']) #tırnak işareti içine kendi veri setinizin çıkış değişkenini ekleyin.
 
-X_train, X_temp, y_train, y_temp = train_test_split(X, y, test_size=0.52, random_state=42)
+X_train, X_temp, y_train, y_temp = train_test_split(X, y, test_size=0.52, random_state=42)   #Parametreleri kendi verisetinize göre ayarlaryın.
 X_val, X_test, y_val, y_test = train_test_split(X_temp, y_temp, test_size=0.38, random_state=42)
 
-model = Sequential([
+model = Sequential([ #Parametreleri kendi verisetinize göre ayarlaryın.
     Dense(15, input_dim=X_train.shape[1], activation='relu'),
     Dropout(0.5),
     Dense(1, activation='sigmoid')
