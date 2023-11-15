@@ -12,5 +12,11 @@
 <br>
 <br>
 <br>
+<br> **_Kaynak kodları kullanacaksanız lütfen aşağıda belirtilen şekilde atıf yapınız._**
+<br>
+<br> Buraya atıf dizini gelecek...
+<br>
+<br>
+<br> 
 <br>  **_Sorularınız ve iletişim için:_** *ugurdemirogr@gmail.com*
 
