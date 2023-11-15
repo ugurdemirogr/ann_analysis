@@ -10,10 +10,8 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 
-data_path = r'C:\Users\...'  # ' ' işareti olan yere verisetinizin bulunduğu dizini ekleyin.
-file_name = '....xlsx' # ' ' işareti olan yere dosyanızın ismi ve uzantısını yazın.
-full_path = os.path.join(data_path, file_name)
-df = pd.read_excel(full_path)
+# İlk olarak ANN modeli ekleniyor.
+data = pd.read_excel(r'') # Tırnak işareti içine verisetinizi ekleyin.
 
 X = StandardScaler().fit_transform(df.drop('OAP_Aralıklı', axis=1))
 y = LabelEncoder().fit_transform(df['OAP_Aralıklı'])
@@ -35,7 +33,7 @@ y_pred = model.predict(X_test)
 fpr_nn, tpr_nn, _ = roc_curve(y_test, y_pred)
 roc_auc_nn = auc(fpr_nn, tpr_nn)
 
-# İkinci kod parçası
+# Burası regresyon analizini içerir.
 data = pd.read_excel(r' ') # ' ' işareti olan yere kendi verisetinizin dizinini yazın.
 
 X = data.iloc[:, 0:8] # giriş verisi
